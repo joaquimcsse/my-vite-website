@@ -48,7 +48,7 @@ export function Navbar() {
           type="button"
           onClick={() => scrollToId("home")}
           aria-label="Scroll to home"
-          className="font-display text-xl font-semibold tracking-tight text-foreground transition-colors hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:text-2xl"
+          className="font-display text-xl font-semibold tracking-tight text-foreground transition-colors cursor-pointer hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:text-2xl"
         >
           {profile.name}
         </button>
@@ -59,7 +59,7 @@ export function Navbar() {
               type="button"
               key={item.id}
               onClick={() => scrollToId(item.id)}
-              className={`py-2 text-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+              className={`py-2 text-sm transition-colors cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
                 activeSection === item.id
                   ? "font-semibold text-foreground"
                   : "text-foreground hover:text-primary"
@@ -69,42 +69,7 @@ export function Navbar() {
             </button>
           ))}
         </nav>
-
-        <button
-          type="button"
-          className="rounded-lg p-2 text-muted-foreground hover:bg-secondary md:hidden"
-          onClick={() => setMenuOpen((open) => !open)}
-          aria-expanded={menuOpen}
-          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
-        >
-          {menuOpen ? <X size={21} /> : <Menu size={21} />}
-        </button>
       </div>
-
-      {menuOpen && (
-        <nav className="border-t border-border px-5 py-4 md:hidden" aria-label="Mobile navigation">
-          <div className="mx-auto grid max-w-6xl gap-1">
-            {NAV_ITEMS.map((item) => (
-              <button
-                type="button"
-                key={item.id}
-                onClick={() => {
-                  scrollToId(item.id);
-                  setMenuOpen(false);
-                }}
-                className={`flex items-center justify-between rounded-lg px-3 py-3 text-left text-sm transition-colors hover:bg-secondary ${
-                  activeSection === item.id
-                    ? "font-semibold text-foreground"
-                    : "text-foreground hover:text-primary"
-                }`}
-              >
-                {item.label}
-                <ChevronRight size={16} />
-              </button>
-            ))}
-          </div>
-        </nav>
-      )}
     </header>
   );
 }

@@ -25,14 +25,14 @@ export function Hero({ onViewResume }: { onViewResume: () => void }) {
           <button
             type="button"
             onClick={onViewResume}
-            className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-bold text-primary-foreground transition-transform hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-bold text-primary-foreground transition-transform cursor-pointer hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           >
             <FileText size={17} /> View resume
           </button>
           <a
             href={profile.resumeUrl}
             download
-            className="inline-flex items-center gap-2 rounded-lg border border-primary/60 px-5 py-3 text-sm font-semibold text-primary transition-colors hover:bg-primary/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="inline-flex items-center gap-2 rounded-lg border border-primary/60 px-5 py-3 text-sm font-semibold text-primary transition-colors cursor-pointer hover:bg-primary/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
              Download resume
           </a>
@@ -62,7 +62,7 @@ export function Hero({ onViewResume }: { onViewResume: () => void }) {
       <button
         type="button"
         onClick={() => scrollToId("about")}
-        className="absolute bottom-8 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-full border border-primary/50 bg-primary/[.08] px-5 py-2.5 text-xs font-semibold uppercase tracking-[.18em] text-primary transition-colors hover:bg-primary/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        className="absolute bottom-8 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-full border border-primary/50 bg-primary/[.08] px-5 py-2.5 text-xs font-semibold uppercase tracking-[.18em] text-primary transition-colors cursor-pointer hover:bg-primary/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
       >
         Scroll to explore
         <ArrowDown size={15} className="animate-nudge-down" />

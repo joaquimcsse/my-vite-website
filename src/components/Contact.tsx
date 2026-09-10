@@ -45,12 +45,12 @@ export function Contact() {
 
         <footer className="flex flex-col gap-4 py-8 text-xs text-subtle sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} {profile.name}. Built with curiosity.
+             &trade {new Date().getFullYear()} {profile.name}
           </p>
           <button
             type="button"
             onClick={() => scrollToId("home")}
-            className="flex items-center gap-2 self-start font-mono-custom uppercase tracking-[.14em] text-foreground transition-colors hover:text-primary sm:self-auto"
+            className="flex items-center gap-2 self-start font-mono-custom uppercase tracking-[.14em] text-foreground transition-colors cursor-pointer hover:text-primary sm:self-auto"
           >
             Back to top <ArrowUpRight size={14} />
           </button>

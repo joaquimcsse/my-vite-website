@@ -45,7 +45,7 @@ export function Contact() {
 
         <footer className="flex flex-col gap-4 py-8 text-xs text-subtle sm:flex-row sm:items-center sm:justify-between">
           <p>
-             &trade {new Date().getFullYear()} {profile.name}
+            {new Date().getFullYear()} {profile.name} &trade;
           </p>
           <button
             type="button"

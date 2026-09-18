@@ -1,16 +1,16 @@
 export const profile = {
   name: "Joaquim Faraco",
-  role: "Estudante de ciência da computação",
+  role: "Tecnologia | Ciência da Computação",
   intro:
-    `I am a curious and creative person and i love technology because, to me, it is the best way to turn ideas into real things! In my journey since i started my CS major,
-     i have built a genuine passion for learning new things and i am always excited for the next project.`,
+    `I am a creative yet pragmatic person and i love technology because, to me, it is the best way to turn ideas into real things! In my journey since i started my CS major,
+     i have built a genuine passion for learning complex things and i am always excited for the next project.`,
   email: "joaquimcontato9@gmail.com",
   github: "https://github.com/joaquimcsse",
   linkedin: "https://linkedin.com/in/joaquim-faraco",
   resumeUrl: "/my-vite-website/CV_Joaquim_2026.pdf",
 };
 
-export const identity = ["Technology Enthusiast", "CS student", "Builder"];
+export const identity = ["Strategy-oriented", "Computer Science student", "Technology Enthusiast"];
 
 export const timeline = [
   {

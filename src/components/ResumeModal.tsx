@@ -41,7 +41,7 @@ export function ResumeModal({ onClose }: { onClose: () => void }) {
               Objetivo
             </h3>
             <p className="mt-3">
-              Estudante de graduação em Ciência da Computação (formatura prevista: dez/2027) buscando estágio em
+              Estudante de graduação em Ciência da Computação (formatura prevista: Dez. 2027) buscando estágio em
                 engenharia de software, desenvolvimento ou suporte técnico.
             </p>
             <h3 className="mt-7 font-mono-custom text-xs uppercase tracking-[.16em] font-bold text-primary">
@@ -55,12 +55,12 @@ export function ResumeModal({ onClose }: { onClose: () => void }) {
               Experiência
             </h3>
             <p className="mt-3 font-medium text-foreground">Programa Institucional de Bolsas de Iniciação em Desenvolvimento Tecnológico e Inovação · [Ago. 2026 - Ago. 2027]</p>
-            <p>Aprimorando o design de um sistema distribuı́do.</p>
-            <p>Integrando novos métodos ao sistema de aprendizado federado.</p>
-            <p>Combinando diferentes técnicas buscando identificar uma abordagem inovadora.</p>
+            <p>Aprimorei uma pipeline de treinamento de modelos de ML.</p>
+            <p>Integrando aprendizado incremental a um sistema de aprendizagem federada.</p>
+            <p>Buscando identificar um algoritmo inovador de aprendizagem federada.</p>
             <p className="mt-5 font-medium text-foreground">Programa Institucional de Bolsas de Iniciação em Desenvolvimento Tecnológico e Inovação · [Ago. 2025 - Ago. 2026]</p>
             <p>Apliquei diferentes estratégias de fine tuning.</p>
-            <p>Otimizei um único algoritmo para bases de dados heterogêneas.</p>
+            <p>Otimizei uma rede neural para bases de dados heterogêneas.</p>
             <p>Submeti um artigo à revista IEEE Access.</p>
             <h3 className="mt-7 font-mono-custom text-xs uppercase tracking-[.16em] font-bold text-primary">
               Habilidades Técnicas
